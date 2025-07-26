@@ -18,4 +18,3 @@ MonoBehaviour:
   MoveSpeed: 300
   BullitWaitTime: 0.4
   Price: 100
-  BoughtTheShip: 0

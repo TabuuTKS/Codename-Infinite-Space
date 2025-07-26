@@ -17,3 +17,4 @@ MonoBehaviour:
   SpaceShipMesh: {fileID: 919132149155446097, guid: 367e51b4357868d47811ada5f44d6dc7, type: 3}
   MoveSpeed: 200
   BullitWaitTime: 0.5
+  Price: 0
