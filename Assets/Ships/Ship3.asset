@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Ship3
   m_EditorClassIdentifier: 
   name: Aurora Vex
-  description: 
+  description: Built for high-speed skirmishes, this sleek fighter unleashes rapid
+    volleys while weaving through enemy fire with grace.
   SpaceShipMesh: {fileID: 919132149155446097, guid: ea86014d87d744349bb972992a746111, type: 3}
   MoveSpeed: 300
   BullitWaitTime: 0.4

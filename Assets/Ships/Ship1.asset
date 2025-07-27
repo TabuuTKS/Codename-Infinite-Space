@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Ship1
   m_EditorClassIdentifier: 
   name: Starlance Horizon
-  description: 
+  description: A balanced and reliable vessel, ideal for steady pilots who value
+    control and consistency in the heat of battle.
   SpaceShipMesh: {fileID: 919132149155446097, guid: 367e51b4357868d47811ada5f44d6dc7, type: 3}
   MoveSpeed: 200
   BullitWaitTime: 0.5

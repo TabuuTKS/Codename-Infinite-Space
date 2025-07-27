@@ -7,7 +7,6 @@ public class GameUI : MonoBehaviour
     [Header("Objects")]
     [SerializeField] TMP_Text ScoreText;
     [SerializeField] TMP_Text CoinText;
-    [SerializeField] GameObject GameOverUI;
     [SerializeField] GameObject MobileUI;
     [SerializeField] SaveSystem saveSystem;
 
@@ -18,8 +17,17 @@ public class GameUI : MonoBehaviour
     [SerializeField] AudioSource Click;
     [SerializeField] AudioSource BackClick;
     public AudioSource MeteorSound;
-    
+
+    [Header("GameOver")]
+    [SerializeField] GameObject GameOverUI;
+    [SerializeField] GameObject GameOverText;
+    [SerializeField] GameObject ReplayBTN;
+    [SerializeField] GameObject BackToMainMenuBTN;
+    [SerializeField] AudioSource GameBGM;
+    [SerializeField] AudioSource GameOverBGM;
+ 
     string currentScene;
+    bool isGameOverAnimPlayed = false;
 
     #region Singleton
     public static GameUI Instance;
@@ -56,7 +64,22 @@ public class GameUI : MonoBehaviour
         #endif
     }
 
-    public void GameOver() { GameOverUI.SetActive(true); }
+    public void GameOver() 
+    {
+        if (!isGameOverAnimPlayed)
+        {
+            GameOverUI.SetActive(true);
+            GameOverText.GetComponent<Animator>().Play("GameOverText");
+            ReplayBTN.GetComponent<Animator>().Play("ReplayBTN");
+            BackToMainMenuBTN.GetComponent<Animator>().Play("BackToMainMenuBTN");
+            GameBGM.Stop();
+            GameOverBGM.Play();
+        }
+        else
+        {
+            isGameOverAnimPlayed = true;
+        }
+    }
     public void Replay()
     {
         Click.Play();

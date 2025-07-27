@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Ship4
   m_EditorClassIdentifier: 
   name: Nebula's Whisper
-  description: 
+  description: An elite interceptor that dances through space like a shadow, delivering
+    relentless bursts with unmatched precision.
   SpaceShipMesh: {fileID: 919132149155446097, guid: 4305bf3cc06684846a1b5da94b46b3ec, type: 3}
   MoveSpeed: 350
   BullitWaitTime: 0.3

@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Ship2
   m_EditorClassIdentifier: 
   name: Void Serpent
-  description: 
+  description: "Swift and agile, this ship strikes fast and moves faster\u2014perfect
+    for players who like to stay one step ahead of their foes."
   SpaceShipMesh: {fileID: 919132149155446097, guid: 69721fc85d4e27848abc8c3f8aa22ccb, type: 3}
   MoveSpeed: 250
   BullitWaitTime: 0.5
